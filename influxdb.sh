@@ -42,8 +42,8 @@ CREATE USER admin WITH PASSWORD 'P@ssword' WITH ALL PRIVILEGES
 influx --userrname admin --pasword P@ssword
 
 # Aqui criaremos o bando de dados utilizado posteriormente
-CREATE DATABASE proxmoxdb
-CREATE USER proxmoxuser WITH PASSWORD 'P@ssword'
-GRANT ALL ON proxmoxdb TO proxmoxuser
+CREATE DATABASE influxdb
+CREATE USER influxuser WITH PASSWORD 'P@ssword'
+GRANT ALL ON influxdb TO influxuser
 exit
 
