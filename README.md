@@ -23,7 +23,7 @@ A instalação completa instalará o seguinte:
 
 # Altere arquivos como:
 
-[http]
+*[http]
 	auth-enabled = true
 [udp]
 	enabled = true
