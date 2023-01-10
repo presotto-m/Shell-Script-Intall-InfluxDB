@@ -23,12 +23,12 @@ A instalação completa instalará o seguinte:
 
 # Altere arquivos como:
 
-*[http]
-	auth-enabled = true
-[udp]
-	enabled = true
-    bind-address = ":8089"
-    database = "proxmoxdb"
-    batch-size = 5000
-    batch-timeout = "ls"
+* [http]
+	 auth-enabled = true
+ [udp]
+	 enabled = true
+     bind-address = ":8089"
+     database = "proxmoxdb"
+     batch-size = 5000
+     batch-timeout = "ls"
 
