@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Atualizar repositórios
-apt update && apt upgrade
+apt update -y && apt upgrade -y
 
 # Os 2 pacos abaixo são para adicionar um futuro repositorio
-apt-get install -y gnupg2 lsb-release
+apt-get install -y gnupg2 lsb-release -y
 
 # Feito isso, vamos adicionar o repositório do influxDB
 wget -qO- https://repos.influxdata.com/influxdb.key | apt-key add -
@@ -13,7 +13,7 @@ echo "deb https://repos.influxdata.com/debian $(lsb_release -cs) stable" | tee /
 
 # Agora podemos atualizar e instalar o InfluxDB
 apt update
-apt install influxdb
+apt install influxdb -y
 
 # Agora vamos iniciar o serviço do InfluxDB
 systemctl enable influxdb
