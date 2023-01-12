@@ -28,7 +28,7 @@ A instalação completa instalará o seguinte:
 [udp] \
 	enabled = true \
     bind-address = ":8089" \
-    database = "proxmoxdb" \
+    database = "nome-da-database" \
     batch-size = 5000 \
     batch-timeout = "ls"
 
